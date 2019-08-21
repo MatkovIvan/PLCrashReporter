@@ -1212,6 +1212,11 @@
 		C2198E0A16441CF5006EB46A /* PLCrashAsyncMachOString.c in Sources */ = {isa = PBXBuildFile; fileRef = C2198E0516441CF5006EB46A /* PLCrashAsyncMachOString.c */; };
 		C2198E0B16441CF5006EB46A /* PLCrashAsyncMachOString.c in Sources */ = {isa = PBXBuildFile; fileRef = C2198E0516441CF5006EB46A /* PLCrashAsyncMachOString.c */; };
 		C2198E0C16441CF5006EB46A /* PLCrashAsyncMachOString.c in Sources */ = {isa = PBXBuildFile; fileRef = C2198E0516441CF5006EB46A /* PLCrashAsyncMachOString.c */; };
+		C25004EB230D4C710075247D /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 246F9DBF230980A500E230B7 /* protobuf-c.c */; };
+		C25004EC230D4C720075247D /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 246F9DBF230980A500E230B7 /* protobuf-c.c */; };
+		C25004ED230D4C730075247D /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 246F9DBF230980A500E230B7 /* protobuf-c.c */; };
+		C25004EE230D4C730075247D /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 246F9DBF230980A500E230B7 /* protobuf-c.c */; };
+		C25004EF230D4C740075247D /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 246F9DBF230980A500E230B7 /* protobuf-c.c */; };
 		C26022861642FCA6007FC29F /* PLCrashAsyncSymbolication.c in Sources */ = {isa = PBXBuildFile; fileRef = C26022851642FCA6007FC29F /* PLCrashAsyncSymbolication.c */; };
 		C26022871642FCA6007FC29F /* PLCrashAsyncSymbolication.c in Sources */ = {isa = PBXBuildFile; fileRef = C26022851642FCA6007FC29F /* PLCrashAsyncSymbolication.c */; };
 		C26022881642FCA6007FC29F /* PLCrashAsyncSymbolication.c in Sources */ = {isa = PBXBuildFile; fileRef = C26022851642FCA6007FC29F /* PLCrashAsyncSymbolication.c */; };
@@ -1272,7 +1277,7 @@
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.c",
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.h",
 			);
-			script = "cd \"${INPUT_FILE_DIR}\" && \"${SRCROOT}/Dependencies/protobuf-2.0.3/bin/protoc-c\" --c_out=\"${DERIVED_FILES_DIR}/${CURRENT_ARCH}\" \"${INPUT_FILE_NAME}\"";
+			script = "cd \"${INPUT_FILE_DIR}\" && \"${SRCROOT}/Dependencies/protobuf-c-1.3.2/bin/protoc-c\" --c_out=\"${DERIVED_FILES_DIR}/${CURRENT_ARCH}\" \"${INPUT_FILE_NAME}\"\n";
 		};
 		0596747A0EF0BA2F008A0601 /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
@@ -1286,7 +1291,7 @@
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.c",
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.h",
 			);
-			script = "cd \"${INPUT_FILE_DIR}\" && \"${SRCROOT}/Dependencies/protobuf-2.0.3/bin/protoc-c\" --c_out=\"${DERIVED_FILES_DIR}/${CURRENT_ARCH}\" \"${INPUT_FILE_NAME}\"";
+			script = "cd \"${INPUT_FILE_DIR}\" && \"${SRCROOT}/Dependencies/protobuf-c-1.3.2/bin/protoc-c\" --c_out=\"${DERIVED_FILES_DIR}/${CURRENT_ARCH}\" \"${INPUT_FILE_NAME}\"\n";
 		};
 		0596747B0EF0BA2F008A0601 /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
@@ -1300,7 +1305,7 @@
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.c",
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.h",
 			);
-			script = "cd \"${INPUT_FILE_DIR}\" && \"${SRCROOT}/Dependencies/protobuf-2.0.3/bin/protoc-c\" --c_out=\"${DERIVED_FILES_DIR}/${CURRENT_ARCH}\" \"${INPUT_FILE_NAME}\"";
+			script = "cd \"${INPUT_FILE_DIR}\" && \"${SRCROOT}/Dependencies/protobuf-c-1.3.2/bin/protoc-c\" --c_out=\"${DERIVED_FILES_DIR}/${CURRENT_ARCH}\" \"${INPUT_FILE_NAME}\"\n";
 		};
 		05E7320E0EFA1B60005EDFB7 /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
@@ -1411,7 +1416,7 @@
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.c",
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.h",
 			);
-			script = "cd \"${INPUT_FILE_DIR}\" && \"${SRCROOT}/Dependencies/protobuf-2.0.3/bin/protoc-c\" --c_out=\"${DERIVED_FILES_DIR}/${CURRENT_ARCH}\" \"${INPUT_FILE_NAME}\"";
+			script = "cd \"${INPUT_FILE_DIR}\" && \"${SRCROOT}/Dependencies/protobuf-c-1.3.2/bin/protoc-c\" --c_out=\"${DERIVED_FILES_DIR}/${CURRENT_ARCH}\" \"${INPUT_FILE_NAME}\"\n";
 		};
 		8064D9911C4D27E2005A8B4C /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
@@ -1425,7 +1430,7 @@
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.c",
 				"${DERIVED_FILES_DIR}/${CURRENT_ARCH}/${INPUT_FILE_BASE}.pb-c.h",
 			);
-			script = "cd \"${INPUT_FILE_DIR}\" && \"${SRCROOT}/Dependencies/protobuf-2.0.3/bin/protoc-c\" --c_out=\"${DERIVED_FILES_DIR}/${CURRENT_ARCH}\" \"${INPUT_FILE_NAME}\"";
+			script = "cd \"${INPUT_FILE_DIR}\" && \"${SRCROOT}/Dependencies/protobuf-c-1.3.2/bin/protoc-c\" --c_out=\"${DERIVED_FILES_DIR}/${CURRENT_ARCH}\" \"${INPUT_FILE_NAME}\"\n";
 		};
 /* End PBXBuildRule section */
 
@@ -4040,6 +4045,7 @@
 				05FDFC84168950F600463E43 /* PLCrashMachExceptionServerTests.m in Sources */,
 				052951EA1696965E006EDA8A /* PLCrashLogWriterEncodingTests.m in Sources */,
 				052951EF1696A461006EDA8A /* PLCrashLogWriterEncodingTests.proto in Sources */,
+				C25004EB230D4C710075247D /* protobuf-c.c in Sources */,
 				05A533DE16D6ACBF00C5E2B3 /* PLCrashFrameStackUnwindTests.m in Sources */,
 				05A17DB816D7E36400888448 /* PLCrashFrameStackUnwind.c in Sources */,
 				05A17DC916D7F81600888448 /* PLCrashAsyncThread.c in Sources */,
@@ -4123,6 +4129,7 @@
 				05E734850EFAD83B005EDFB7 /* PLCrashAsyncSignalInfoTests.m in Sources */,
 				059C9D7D13AE46E40071956F /* PLCrashAsyncImageList.cpp in Sources */,
 				052A46F813637DE000987004 /* PLCrashAsyncImageListTests.m in Sources */,
+				C25004EC230D4C720075247D /* protobuf-c.c in Sources */,
 				05BB84901364EE1500D53B84 /* PLCrashSysctlTests.m in Sources */,
 				059C9D7C13AE46E10071956F /* PLCrashSysctl.c in Sources */,
 				05EB2B1815B6FDA80066EB4D /* PLCrashReporterNSError.m in Sources */,
@@ -4239,6 +4246,7 @@
 				05FDFC86168950F600463E43 /* PLCrashMachExceptionServerTests.m in Sources */,
 				052951EC1696965E006EDA8A /* PLCrashLogWriterEncodingTests.m in Sources */,
 				052951F11696A461006EDA8A /* PLCrashLogWriterEncodingTests.proto in Sources */,
+				C25004ED230D4C730075247D /* protobuf-c.c in Sources */,
 				058484AE1804841100A56049 /* unwind_test_arm64_frameless.S in Sources */,
 				05A533E016D6ACBF00C5E2B3 /* PLCrashFrameStackUnwindTests.m in Sources */,
 				05A17DBA16D7E37100888448 /* PLCrashFrameStackUnwind.c in Sources */,
@@ -4561,6 +4569,7 @@
 				8064D8DB1C4D27DF005A8B4C /* PLCrashAsyncMObject.c in Sources */,
 				8064D8DC1C4D27DF005A8B4C /* PLCrashAsyncMObjectTests.m in Sources */,
 				8064D8DD1C4D27DF005A8B4C /* PLCrashAsyncObjCSection.mm in Sources */,
+				C25004EE230D4C730075247D /* protobuf-c.c in Sources */,
 				8064D8DE1C4D27DF005A8B4C /* PLCrashAsyncObjCSectionTests.m in Sources */,
 				8064D8DF1C4D27DF005A8B4C /* PLCrashAsyncSymbolication.c in Sources */,
 				8064D8E01C4D27DF005A8B4C /* PLCrashAsyncSymbolicationTests.m in Sources */,
@@ -4646,6 +4655,7 @@
 				8064D93C1C4D27E2005A8B4C /* PLCrashReporterTests.m in Sources */,
 				8064D93E1C4D27E2005A8B4C /* PLCrashReportTests.m in Sources */,
 				8064D93F1C4D27E2005A8B4C /* PLCrashAsyncSignalInfo.c in Sources */,
+				C25004EF230D4C740075247D /* protobuf-c.c in Sources */,
 				8064D9401C4D27E2005A8B4C /* PLCrashAsyncSignalInfoTests.m in Sources */,
 				8064D9411C4D27E2005A8B4C /* PLCrashAsyncImageList.cpp in Sources */,
 				8064D9421C4D27E2005A8B4C /* PLCrashAsyncImageListTests.m in Sources */,
