@@ -18,8 +18,12 @@ let package = Package(
             ],
             cSettings: [
                 .define("PLCR_PRIVATE"),
-                .define("PLCF_RELEASE_BUILD")
+                .define("PLCF_RELEASE_BUILD"),
+                .unsafeFlags(["-f", "no-objc-arc"])
             ],
+            cxxSettings:[
+                .unsafeFlags(["-f", "no-exceptions"])
+             ],
             linkerSettings: [
                 .linkedFramework("Foundation")
             ]
