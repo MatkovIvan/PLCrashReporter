@@ -510,6 +510,8 @@ static NSInteger binaryImageSort(id binary1, id binary2, void *context);
         imageName = [imageInfo.imageName lastPathComponent];
         baseAddress = imageInfo.imageBaseAddress;
         pcOffset = frameInfo.instructionPointer - imageInfo.imageBaseAddress;
+    } else if (frameInfo.instructionPointer) {
+        NSLog(@"Cannot find image for 0x%" PRIx64, frameInfo.instructionPointer);
     }
 
     /* If symbol info is available, the format used in Apple's reports is Sym + OffsetFromSym. Otherwise,
